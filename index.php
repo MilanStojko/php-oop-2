@@ -102,6 +102,10 @@ $arrayLengthFilm = explode(".",$lengthFilm);
 
 $arrayUltimaOra [0] = $arrayUltimaOra[0] + $arrayLengthFilm[0];
 $arrayUltimaOra [1] = $arrayUltimaOra[1] + $arrayLengthFilm[1];
+var_dump($arrayUltimaOra[0]);
+if($arrayUltimaOra [0] == 24){
+    $arrayUltimaOra [0] = intval(00);
+}
 
 if($arrayUltimaOra[1] > 59){
     $arrayUltimaOra [0] = $arrayUltimaOra [0]+1;

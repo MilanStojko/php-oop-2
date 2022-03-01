@@ -4,15 +4,27 @@ class Show
 {
     private $movie;
     private $date;
-    private $time;
-    private $duration;
+    private $orario;
     private $sala;
 
-    public function __construct($_movie, $_date, $_time, $_duration, $_sala){
+    public function __construct($_movie, $_date, $_orario, $_sala){
         $this-> movie = $_movie;
         $this-> date = $_date;
-        $this-> time = $_time;
-        $this-> duration = $_duration;
+        $this-> orario = $_orario;
         $this-> sala = $_sala;
     }
+
+    public function getDate(){
+        return $this->date;
+    }
+
+    public function getMovie(){
+        return $this->movie;
+    }
+
+    public function getOrario(){
+        return $this->orario;
+    }
+
+
 }
